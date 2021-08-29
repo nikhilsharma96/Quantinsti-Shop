@@ -1,0 +1,20 @@
+.nav-item{
+    padding: 0 10px 0 10px;
+    font-size: large;
+}
+.nav-link{
+    color: black;
+    background-color:transparent;
+}
+
+.nav-pills > li > a.active{
+    background-color:black !important;
+    color:white !important;
+  }
+  
+  
+input{
+    border: none;
+    border-bottom: 1px solid yellowgreen;
+    width: 10rem
+}

@@ -1,0 +1,16 @@
+<div class="container m-40 px-10">
+    <div class="card text-center">
+        <div class="card-header">
+            <img [src]=selectedProduct.image alt="selectedProduct.name">
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">{{selectedProduct.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{selectedProduct.category}}</h6>
+        <p class="card-text">{{selectedProduct.description}}</p>
+        </div>
+        <div class="card-footer text-muted">
+            <strong>{{selectedProduct.price | currency}}</strong>
+        </div>
+        <span class="badge badge-danger" (click)="addProduct(selectedProduct)">Buy Now!</span>
+    </div>
+</div>

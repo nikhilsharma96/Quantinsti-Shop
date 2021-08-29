@@ -1,0 +1,37 @@
+<div class="container">
+<nav class="navbar navbar-expand-sm ">
+    <!-- Links -->
+    <ul class="nav nav-pills">
+      <li class="nav-item ">
+        <a class="nav-link active" href="#">
+            <i class="fa fa-bars " aria-hidden="true"></i>
+        </a>
+      </li>
+        <li class="nav-item ">
+        <a class="nav-link " href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Magazine</a>
+      </li>
+    </ul>
+    <form class="form-inline" style="margin-left: 270px;">
+        <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" #search>
+    </form>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> 
+            <a class="nav-link" [routerLink]="['/cart']">
+                <i class="fa fa-shopping-cart"></i>
+            </a> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/login']" data-abc="true">
+                <span>&nbsp;&nbsp;&nbsp;Sign In</span>            
+            </a>
+        </li>
+    </ul>
+  </nav>
+</div>

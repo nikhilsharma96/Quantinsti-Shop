@@ -1,0 +1,27 @@
+<div *ngIf="!allowUser" class="card text-center" style="width: 50%;margin: auto;">
+    <div class="card-header">
+      <h1>
+        Please Login to Continue
+      </h1>
+    </div>
+    <div class="card-body">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" >
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" 
+                name="username" placeholder="Username" required ngModel>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="password"
+                 id="password" placeholder="Password" required ngModel>
+            </div>
+            <button type="submit"  class="btn btn-primary"
+            [disabled]="!f.valid">Submit</button>
+        </form>
+    </div>
+  </div>
+  <div *ngIf="allowUser" class="container">
+    <i class="fa fa-database" aria-hidden="true"></i>
+    <i class="fa fa-repeat" aria-hidden="true" (click)="allowUser=!allowUser">Retry!!</i>
+  </div>
